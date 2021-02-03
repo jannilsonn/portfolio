@@ -10,8 +10,7 @@ import Footer from './components/Footer'
 
 export default function App() {
     const [fixed, setFixed] = React.useState('')
-
-    window.scrollTo( 0, 0 )
+    
     document.body.onscroll = () => (window.scrollY > 70) ? setFixed('menu-fixed') : setFixed('')
 
     const [item, setItem] = React.useState({
