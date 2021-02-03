@@ -5,7 +5,7 @@ import SYS from '../images/Logosys.png'
 
 export default function Experience(props) {
     return (
-        <section className="box-card">
+        <section className="box-card" style={{display: props.display}}>
             <div className="card">
                 <img  src={ProjectCompleted} alt="undraw_project_completed_w0oq" className={`img-${props.direction}`}/>
                 <p>Minha experiência são com muitos projetos pessoais que não costumo colocar de forma pública, mas privado já que são voltados mais para algumas ideias pessoais.</p>

@@ -16,7 +16,7 @@ import WordPress from '../images/wordpress-blue.svg'
 
 export default function Skill(props) {
     return (
-        <section className="box-card">
+        <section className="box-card" style={{display: props.display}}>
             <div className="card">
                 <img  src={HTML5} alt="html5" className={`img-min img-${props.direction}`}/>
                 <p>HTML: Uma das primeiras tecnologias senão a primeira para um desenvolvedor web, sua importância é gigantesca quando falamos de SEO.</p>
@@ -31,7 +31,7 @@ export default function Skill(props) {
             </div>
             <div className="card">
                 <img  src={Git} alt="git" className={`img-min img-${props.direction}`}/>
-                <p>Git: Pensando em fazer um projeto lindo e maravilhoso, e por alguma razão perdê- lo, por isso o git é interessante para versionar o código fonte dando mais segurança para fazer as alterações necessárias além de muito mais.</p>
+                <p>Git: Para fazer várias versões do seu projeto, e ainda dá aquela segurança de não perder tudo o que tinha feito, ferramenta essencial para o desenvolvimento de qualquer aplicação.</p>
             </div>
             <div className="card">
                 <img  src={Jquery} alt="jquery" className={`img-min img-${props.direction}`}/>

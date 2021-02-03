@@ -8,9 +8,8 @@ import Businessman from '../images/undraw_businessman_97x4.svg'
 import Ideas from '../images/undraw_ideas_s70l.svg'
 
 export default function Profile(props) {
-    
     return (
-        <section className="box-card">
+        <section className="box-card" style={{display: props.display}}>
             <div className="card">
                 <img  src={OnlineCV} alt="undraw_online_cv_qy9w" className={`img-${props.direction}`}/>
                 <main><p>Esse CV online descreve um pouco sobre minhas qualidades como profissional, habilidades, experiência e negócio principal.</p></main>

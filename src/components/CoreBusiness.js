@@ -8,7 +8,7 @@ import PortfolioWebsite from '../images/undraw_portfolio_website_lidw.svg'
 
 export default function Experience(props) {
     return (
-        <section className="box-card">
+        <section className="box-card" style={{display: props.display}}>
             <div className="card">
                 <img  src={SiteStats} alt="undraw_site_stats_l57q" className={`img-${props.direction}`}/>
                 <p>Site institucional: Quem precisa promover e tornar conhecida sua marca ou empresa.</p>
